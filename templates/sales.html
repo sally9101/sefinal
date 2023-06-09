@@ -32,11 +32,11 @@
     </nav>
     <section class="section-one">
         <div class="container"> 
-            <form>  
-                <input type="search" placeholder="期間...">
+            <form action="{{ url_for('search') }}" method="post">  
+                <input type="text" id="productName" name="productName" placeholder="請輸入產品名稱" required>
                 <button type="submit">Search</button>
              </form>
-          </div>
+        </div>
         <div class="container2" style="border: 1px solid #C7D2DF ">
             <div class="bgc1-top" >
 
@@ -79,5 +79,8 @@
             </table>
 
     </section>
+    <div class="omo">
+        <img src="{{ url_for('static', filename='img/omo.png') }}">
+   </div>
 </body>
 </html>

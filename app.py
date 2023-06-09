@@ -14,7 +14,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     # 连接到MySQL数据库
-    cnx = mysql.connector.connect(user='root', password='1234',
+    cnx = mysql.connector.connect(user='root', password='12345678',
                                   host='localhost', database='massage')
 
     # 创建游标对象
@@ -165,4 +165,4 @@ def chart():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run('0.0.0.0',port=7090,debug=True)
