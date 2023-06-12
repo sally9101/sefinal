@@ -14,7 +14,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     # 连接到MySQL数据库
-    cnx = mysql.connector.connect(user='root', password='12345678',
+    cnx = mysql.connector.connect(user='root', password='1234',
                                   host='localhost', database='massage')
 
     # 创建游标对象
